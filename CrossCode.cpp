@@ -53,7 +53,5 @@ int main(int argc, char** argv) {
 	}
 	file << "</svg>";
 	file.close();
-	cout << "SUCCESS!" << endl << "You may close the window now.";
-	while (1) {}
-		return 0;
+	cout << "SUCCESS!" << endl;
 }
