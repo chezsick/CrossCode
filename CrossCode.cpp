@@ -1,15 +1,12 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <cmath>
 using namespace std;
-int main() {
+int main(int argc, char** argv) {
 	ofstream file;
-	string text;
-	string path;
-	cout << "Enter Text:" << endl;
-	getline(cin, text);
-	cout << "Enter Path:" << endl;
-	getline(cin, path);
+	string text = argv[1];
+	string path = argv[2];
 	file.open(path, ios::trunc);
 	int dimension = sqrt(text.length() * 7);
 	if (dimension * 7 != 7 * text.length()) {
